@@ -1,0 +1,1191 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: FPGA_Inputs.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "FPGA_Inputs.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "FPGA_Inputs"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : FPGA_Inputs
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\HLi\FPGA_Inputs\FPGA_Inputs_Pkg.vhd" into library work
+Parsing package <FPGA_Inputs_Pkg>.
+Parsing package body <FPGA_Inputs_Pkg>.
+Parsing VHDL file "C:\Users\HLi\FPGA_Inputs\UART_TX_CTRL.vhd" into library work
+Parsing entity <UART_TX_CTRL>.
+Parsing architecture <Behavioral> of entity <uart_tx_ctrl>.
+Parsing VHDL file "C:\Users\HLi\FPGA_Inputs\TicToc.vhd" into library work
+Parsing entity <TicToc>.
+Parsing architecture <Behavioral> of entity <tictoc>.
+Parsing VHDL file "C:\Users\HLi\FPGA_Inputs\Input_Signal.vhd" into library work
+Parsing entity <Input_Signal>.
+Parsing architecture <Input> of entity <input_signal>.
+Parsing VHDL file "C:\Users\HLi\FPGA_Inputs\Frequency_Divided_Clock.vhd" into library work
+Parsing entity <Frequency_Divided_Clock>.
+Parsing architecture <Behavioral> of entity <frequency_divided_clock>.
+Parsing VHDL file "C:\Users\HLi\FPGA_Inputs\ASCIIConvert.vhd" into library work
+Parsing entity <ASCIIConvert>.
+Parsing architecture <Behavioral> of entity <asciiconvert>.
+Parsing VHDL file "C:\Users\HLi\FPGA_Inputs\main.vhd" into library work
+Parsing entity <FPGA_Inputs>.
+Parsing architecture <Structure> of entity <fpga_inputs>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <FPGA_Inputs> (architecture <Structure>) from library <work>.
+
+Elaborating entity <Frequency_Divided_Clock> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Input_Signal> (architecture <Input>) with generics from library <work>.
+
+Elaborating entity <Input_Signal> (architecture <Input>) with generics from library <work>.
+
+Elaborating entity <Input_Signal> (architecture <Input>) with generics from library <work>.
+
+Elaborating entity <Input_Signal> (architecture <Input>) with generics from library <work>.
+
+Elaborating entity <Input_Signal> (architecture <Input>) with generics from library <work>.
+
+Elaborating entity <Input_Signal> (architecture <Input>) with generics from library <work>.
+
+Elaborating entity <Input_Signal> (architecture <Input>) with generics from library <work>.
+
+Elaborating entity <Input_Signal> (architecture <Input>) with generics from library <work>.
+
+Elaborating entity <UART_TX_CTRL> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\HLi\FPGA_Inputs\UART_TX_CTRL.vhd" Line 97. Case statement is complete. others clause is never selected
+
+Elaborating entity <ASCIIConvert> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <TicToc> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FPGA_Inputs>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\main.vhd".
+    Summary:
+	no macro.
+Unit <FPGA_Inputs> synthesized.
+
+Synthesizing Unit <Frequency_Divided_Clock>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\Frequency_Divided_Clock.vhd".
+    Found 3-bit register for signal <Clk_Prescalar>.
+    Found 1-bit register for signal <Clk_temp>.
+    Found 3-bit adder for signal <Clk_Prescalar[2]_GND_8_o_add_1_OUT> created at line 58.
+    Found 3-bit comparator greater for signal <Clk_Prescalar[2]_PWR_8_o_LessThan_1_o> created at line 57
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Frequency_Divided_Clock> synthesized.
+
+Synthesizing Unit <Input_Signal_1>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\Input_Signal.vhd".
+        Input_File = "000000000000001000000010100110000000100000000000000010000011001111101010011011100001010001001000010100000010000001001000000000000000000000100011101010101111111111111111111111111111111110011111101111111111111111111111111100010000010000011011111111111111111111111111111111111111111111111111111111111111111111111111111111110010010101001111111111111111111111111111111111111111111111111111111111111111111111111111111101111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100001100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100111111011111111111111111111111111111111111111111111111111101111111111111011111110111111111111111111111111111001000010011001101111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111010000100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110010000100110"
+    Found 10-bit register for signal <Counter>.
+    Found 25-bit register for signal <Delay_Counter>.
+    Found 1-bit register for signal <Input_Out>.
+    Found 19-bit register for signal <Prescalar>.
+    Found 25-bit adder for signal <Delay_Counter[24]_GND_9_o_add_1_OUT> created at line 62.
+    Found 19-bit adder for signal <Prescalar[18]_GND_9_o_add_4_OUT> created at line 66.
+    Found 10-bit adder for signal <Counter[9]_GND_9_o_add_6_OUT> created at line 70.
+    Found 1024x1-bit Read Only RAM for signal <Counter[9]_X_9_o_Mux_5_o>
+    Found 25-bit comparator greater for signal <Delay_Counter[24]_PWR_9_o_LessThan_1_o> created at line 61
+    Found 10-bit comparator greater for signal <Counter[9]_PWR_9_o_LessThan_3_o> created at line 64
+    Found 19-bit comparator greater for signal <Prescalar[18]_PWR_9_o_LessThan_4_o> created at line 65
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  55 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Input_Signal_1> synthesized.
+
+Synthesizing Unit <Input_Signal_2>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\Input_Signal.vhd".
+        Input_File = "000000001000000000000010101110000101000010010101100001100100100001000000101010101011111111000101000010111100101010100100000001101010100000000010101010101111111111111111111111111111111110111111101111111111111111111111111100111110011001000110111111111111111111111111111111111111111111111111111111111111111111111111111111110000011011001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111011100001110011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111101111111011111111111111111111111111111111111111111111111111111111111111111111111011111111111111111111111111111001000010011000101111111111111111111111111111111101111111111111111111111111111111111111111111111111111111111111111111111001000100011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111110010100100110"
+    Found 10-bit register for signal <Counter>.
+    Found 25-bit register for signal <Delay_Counter>.
+    Found 1-bit register for signal <Input_Out>.
+    Found 19-bit register for signal <Prescalar>.
+    Found 25-bit adder for signal <Delay_Counter[24]_GND_10_o_add_1_OUT> created at line 62.
+    Found 19-bit adder for signal <Prescalar[18]_GND_10_o_add_4_OUT> created at line 66.
+    Found 10-bit adder for signal <Counter[9]_GND_10_o_add_6_OUT> created at line 70.
+    Found 1024x1-bit Read Only RAM for signal <Counter[9]_X_10_o_Mux_5_o>
+    Found 25-bit comparator greater for signal <Delay_Counter[24]_PWR_10_o_LessThan_1_o> created at line 61
+    Found 10-bit comparator greater for signal <Counter[9]_PWR_10_o_LessThan_3_o> created at line 64
+    Found 19-bit comparator greater for signal <Prescalar[18]_PWR_10_o_LessThan_4_o> created at line 65
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  55 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Input_Signal_2> synthesized.
+
+Synthesizing Unit <Input_Signal_3>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\Input_Signal.vhd".
+        Input_File = "000000010100010000010000010000000000000000000000000000000000000000000101000000000000010000000000000010000000000000000000100001000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000111010010101000010000000000001010000000100000100001111110100111001110111110111110111011011000001110111111110101000101010010100100000000000111111110010000100000001111100001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010111000010010100010000100010101001000000001000000000000000101010000001100000000000010000001000000010010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000011110010001011110000111011010110111100111111010101100111111111111111111000111111100011001011000110001011010000111000001111000111001101010000110011101110000101101100010000100001001110000110001000010101110101110110000100000000000000000"
+    Found 10-bit register for signal <Counter>.
+    Found 25-bit register for signal <Delay_Counter>.
+    Found 1-bit register for signal <Input_Out>.
+    Found 19-bit register for signal <Prescalar>.
+    Found 25-bit adder for signal <Delay_Counter[24]_GND_11_o_add_1_OUT> created at line 62.
+    Found 19-bit adder for signal <Prescalar[18]_GND_11_o_add_4_OUT> created at line 66.
+    Found 10-bit adder for signal <Counter[9]_GND_11_o_add_6_OUT> created at line 70.
+    Found 1024x1-bit Read Only RAM for signal <Counter[9]_X_11_o_Mux_5_o>
+    Found 25-bit comparator greater for signal <Delay_Counter[24]_PWR_11_o_LessThan_1_o> created at line 61
+    Found 10-bit comparator greater for signal <Counter[9]_PWR_11_o_LessThan_3_o> created at line 64
+    Found 19-bit comparator greater for signal <Prescalar[18]_PWR_11_o_LessThan_4_o> created at line 65
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  55 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Input_Signal_3> synthesized.
+
+Synthesizing Unit <Input_Signal_4>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\Input_Signal.vhd".
+        Input_File = "000100010001010101010000000000000000000000000000000000000000100000000001000000000000000000100000000000000000001000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111110111101111111111111111111111011111011110000001111001111101100101010111000100100000000101111111111010111111101101111011111111111111111101101111111111111110111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111101111111101111111101111011111011110111111111111111111111111110101111111011111111111101111110111111101101110000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000001111011110111001111100100101001001011000000101010011000010100000000000111000000011110110100111001110100101111010000010100111100110010111111101100010001111010010011101111011110110001111001110111101010001010001101111011110000000000110"
+    Found 10-bit register for signal <Counter>.
+    Found 25-bit register for signal <Delay_Counter>.
+    Found 1-bit register for signal <Input_Out>.
+    Found 19-bit register for signal <Prescalar>.
+    Found 25-bit adder for signal <Delay_Counter[24]_GND_12_o_add_1_OUT> created at line 62.
+    Found 19-bit adder for signal <Prescalar[18]_GND_12_o_add_4_OUT> created at line 66.
+    Found 10-bit adder for signal <Counter[9]_GND_12_o_add_6_OUT> created at line 70.
+    Found 1024x1-bit Read Only RAM for signal <Counter[9]_X_12_o_Mux_5_o>
+    Found 25-bit comparator greater for signal <Delay_Counter[24]_PWR_12_o_LessThan_1_o> created at line 61
+    Found 10-bit comparator greater for signal <Counter[9]_PWR_12_o_LessThan_3_o> created at line 64
+    Found 19-bit comparator greater for signal <Prescalar[18]_PWR_12_o_LessThan_4_o> created at line 65
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  55 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Input_Signal_4> synthesized.
+
+Synthesizing Unit <Input_Signal_5>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\Input_Signal.vhd".
+        Input_File = "010000000001010111111111100010100000000010000000001000000000111111110010111111110111100000000001000000000000000000000000000000000000000000110001000011111110000001110011110010001111111100000000000000000000000000000000000010000000000001000010101111111101101110111110111111101011111011111111111111111111111111110011100100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111001100010000001000000000010010111001110111110101010000010000000000000001010000000001000101100011101000000000001111111111111111111111001100100111111101110111101011111111111101111111111111100111011111111111111000011100111001110110010010000101000100000000010010110111101101010110111101111011110100101111000010011001000010000101000000010010000100111000110010000000000110000001001001000111101110000010001100000010000010000011010110110101000000100000100000000"
+    Found 10-bit register for signal <Counter>.
+    Found 25-bit register for signal <Delay_Counter>.
+    Found 1-bit register for signal <Input_Out>.
+    Found 19-bit register for signal <Prescalar>.
+    Found 25-bit adder for signal <Delay_Counter[24]_GND_13_o_add_1_OUT> created at line 62.
+    Found 19-bit adder for signal <Prescalar[18]_GND_13_o_add_4_OUT> created at line 66.
+    Found 10-bit adder for signal <Counter[9]_GND_13_o_add_6_OUT> created at line 70.
+    Found 1024x1-bit Read Only RAM for signal <Counter[9]_X_13_o_Mux_5_o>
+    Found 25-bit comparator greater for signal <Delay_Counter[24]_PWR_13_o_LessThan_1_o> created at line 61
+    Found 10-bit comparator greater for signal <Counter[9]_PWR_13_o_LessThan_3_o> created at line 64
+    Found 19-bit comparator greater for signal <Prescalar[18]_PWR_13_o_LessThan_4_o> created at line 65
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  55 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Input_Signal_5> synthesized.
+
+Synthesizing Unit <Input_Signal_6>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\Input_Signal.vhd".
+        Input_File = "000000000001000000000000001000001000100000100010100000000000000010000000001100110000011101001100100000010001000001000000000100101001111000000000111111111111111111111101111101111111110010100000101111101010011110111111010010000011100000010111011011011111110100111111001000110101001111101111111111111111111111111111111011110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100101111101111000000000000000000000000000000000000000000000011111111101111111111111111101111011110000000000000001011101000011100001100000101111111110100011100100000011111111001001000100000111010011111111000101000001110111101001010110111101001001100101001111011110010001111000010010100000000000000010000000000010000000000110000000000000000100010010000010100010000000000000010000000001100000000000001100100000100101000000000000000000000000000000000000000000000001100110000000001000100011110010000000000000000000101000"
+    Found 10-bit register for signal <Counter>.
+    Found 25-bit register for signal <Delay_Counter>.
+    Found 1-bit register for signal <Input_Out>.
+    Found 19-bit register for signal <Prescalar>.
+    Found 25-bit adder for signal <Delay_Counter[24]_GND_14_o_add_1_OUT> created at line 62.
+    Found 19-bit adder for signal <Prescalar[18]_GND_14_o_add_4_OUT> created at line 66.
+    Found 10-bit adder for signal <Counter[9]_GND_14_o_add_6_OUT> created at line 70.
+    Found 1024x1-bit Read Only RAM for signal <Counter[9]_X_14_o_Mux_5_o>
+    Found 25-bit comparator greater for signal <Delay_Counter[24]_PWR_14_o_LessThan_1_o> created at line 61
+    Found 10-bit comparator greater for signal <Counter[9]_PWR_14_o_LessThan_3_o> created at line 64
+    Found 19-bit comparator greater for signal <Prescalar[18]_PWR_14_o_LessThan_4_o> created at line 65
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  55 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Input_Signal_6> synthesized.
+
+Synthesizing Unit <Input_Signal_7>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\Input_Signal.vhd".
+        Input_File = "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000011000000110110001000010000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001101001011100100000111000010110001101010000000001001000000011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010110110001000010000101101111011000111100111010010011101001011100011101011011110111101111011110001000110000000000000011000010111101111011110111101111011110111101111011110010001001011110110101011000000101100000011110000000000000"
+    Found 10-bit register for signal <Counter>.
+    Found 25-bit register for signal <Delay_Counter>.
+    Found 1-bit register for signal <Input_Out>.
+    Found 19-bit register for signal <Prescalar>.
+    Found 25-bit adder for signal <Delay_Counter[24]_GND_15_o_add_1_OUT> created at line 62.
+    Found 19-bit adder for signal <Prescalar[18]_GND_15_o_add_4_OUT> created at line 66.
+    Found 10-bit adder for signal <Counter[9]_GND_15_o_add_6_OUT> created at line 70.
+    Found 1024x1-bit Read Only RAM for signal <Counter[9]_X_15_o_Mux_5_o>
+    Found 25-bit comparator greater for signal <Delay_Counter[24]_PWR_15_o_LessThan_1_o> created at line 61
+    Found 10-bit comparator greater for signal <Counter[9]_PWR_15_o_LessThan_3_o> created at line 64
+    Found 19-bit comparator greater for signal <Prescalar[18]_PWR_15_o_LessThan_4_o> created at line 65
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  55 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Input_Signal_7> synthesized.
+
+Synthesizing Unit <Input_Signal_8>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\Input_Signal.vhd".
+        Input_File = "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110"
+    Found 10-bit register for signal <Counter>.
+    Found 25-bit register for signal <Delay_Counter>.
+    Found 1-bit register for signal <Input_Out>.
+    Found 19-bit register for signal <Prescalar>.
+    Found 25-bit adder for signal <Delay_Counter[24]_GND_16_o_add_1_OUT> created at line 62.
+    Found 19-bit adder for signal <Prescalar[18]_GND_16_o_add_4_OUT> created at line 66.
+    Found 10-bit adder for signal <Counter[9]_GND_16_o_add_6_OUT> created at line 70.
+    Found 64x1-bit Read Only RAM for signal <Counter[9]_GND_16_o_Mux_5_o>
+    Found 25-bit comparator greater for signal <Delay_Counter[24]_PWR_16_o_LessThan_1_o> created at line 61
+    Found 10-bit comparator greater for signal <Counter[9]_PWR_16_o_LessThan_3_o> created at line 64
+    Found 19-bit comparator greater for signal <Prescalar[18]_PWR_16_o_LessThan_4_o> created at line 65
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  55 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Input_Signal_8> synthesized.
+
+Synthesizing Unit <UART_TX_CTRL>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\UART_TX_CTRL.vhd".
+    Found 14-bit register for signal <bitTmr>.
+    Found 31-bit register for signal <bitIndex>.
+    Found 10-bit register for signal <txData>.
+    Found 1-bit register for signal <txBit>.
+    Found 2-bit register for signal <txState>.
+    Found finite state machine <FSM_0> for signal <txState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | Clk (rising_edge)                              |
+    | Power Up State     | rdy                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit adder for signal <bitTmr[13]_GND_17_o_add_7_OUT> created at line 112.
+    Found 31-bit adder for signal <bitIndex[30]_GND_17_o_add_14_OUT> created at line 127.
+    Found 1-bit 10-to-1 multiplexer for signal <bitIndex[3]_X_17_o_Mux_22_o> created at line 147.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  56 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UART_TX_CTRL> synthesized.
+
+Synthesizing Unit <ASCIIConvert>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\ASCIIConvert.vhd".
+    Found 1-bit register for signal <TicToc_TX_ready>.
+    Found 10-bit register for signal <Delay_Counter>.
+    Found 1-bit register for signal <TicToc_ASCII_TX_done>.
+    Found 8-bit register for signal <TicToc_ASCII>.
+    Found 3-bit register for signal <Counter>.
+    Found 6-bit subtractor for signal <n0219> created at line 88.
+    Found 10-bit adder for signal <Delay_Counter[9]_GND_18_o_add_1_OUT> created at line 66.
+    Found 6-bit adder for signal <GND_18_o_GND_18_o_add_259_OUT> created at line 88.
+    Found 8-bit adder for signal <GND_18_o_GND_18_o_add_279_OUT> created at line 89.
+    Found 8-bit adder for signal <GND_18_o_GND_18_o_add_280_OUT> created at line 89.
+    Found 8-bit adder for signal <GND_18_o_GND_18_o_add_281_OUT> created at line 89.
+    Found 8-bit adder for signal <GND_18_o_GND_18_o_add_282_OUT> created at line 89.
+    Found 8-bit adder for signal <GND_18_o_GND_18_o_add_283_OUT> created at line 89.
+    Found 3-bit adder for signal <Counter[2]_GND_18_o_add_598_OUT> created at line 99.
+    Found 8-bit adder for signal <GND_18_o_GND_18_o_add_308_OUT> created at line 91.
+    Found 8-bit adder for signal <GND_18_o_GND_18_o_add_310_OUT> created at line 91.
+    Found 8-bit adder for signal <GND_18_o_GND_18_o_add_312_OUT> created at line 91.
+    Found 8-bit adder for signal <GND_18_o_GND_18_o_add_314_OUT> created at line 91.
+    Found 8-bit adder for signal <GND_18_o_GND_18_o_add_316_OUT> created at line 91.
+    Found 10-bit comparator greater for signal <Delay_Counter[9]_PWR_18_o_LessThan_1_o> created at line 65
+    Found 3-bit comparator greater for signal <Counter[2]_GND_18_o_LessThan_3_o> created at line 72
+    Found 3-bit comparator greater for signal <GND_18_o_Counter[2]_LessThan_257_o> created at line 86
+    Found 3-bit comparator greater for signal <Counter[2]_PWR_18_o_LessThan_258_o> created at line 86
+    Found 4-bit comparator greater for signal <TicToc_Arr[3]_PWR_18_o_LessThan_269_o> created at line 88
+    Found 4-bit comparator greater for signal <TicToc_Arr[7]_PWR_18_o_LessThan_332_o> created at line 88
+    Found 4-bit comparator greater for signal <TicToc_Arr[11]_PWR_18_o_LessThan_395_o> created at line 88
+    Found 4-bit comparator greater for signal <TicToc_Arr[15]_PWR_18_o_LessThan_458_o> created at line 88
+    Found 4-bit comparator greater for signal <TicToc_Arr[19]_PWR_18_o_LessThan_521_o> created at line 88
+    Summary:
+	inferred  14 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   9 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <ASCIIConvert> synthesized.
+
+Synthesizing Unit <TicToc>.
+    Related source file is "C:\Users\HLi\FPGA_Inputs\TicToc.vhd".
+    Found 16-bit register for signal <Counter>.
+    Found 1-bit register for signal <TicToc_ready>.
+    Found 10-bit register for signal <Input_Counter>.
+    Found 20-bit register for signal <TicToc_Arr>.
+    Found 1-bit register for signal <TimeStamp_temp>.
+    Found 1-bit register for signal <GND_19_o_TicToc_ASCII_TX_done_DFF_125_q>.
+    Found 10-bit adder for signal <Input_Counter[9]_GND_19_o_add_1_OUT> created at line 74.
+    Found 16-bit adder for signal <Counter[15]_GND_19_o_add_2_OUT> created at line 77.
+    Found 10-bit comparator greater for signal <Input_Counter[9]_PWR_21_o_LessThan_1_o> created at line 70
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  49 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <TicToc> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 12
+ 1024x1-bit single-port Read Only RAM                  : 11
+ 64x1-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 55
+ 10-bit adder                                          : 14
+ 14-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 19-bit adder                                          : 12
+ 25-bit adder                                          : 12
+ 3-bit adder                                           : 2
+ 31-bit adder                                          : 1
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 8-bit adder                                           : 10
+# Registers                                            : 65
+ 1-bit register                                        : 19
+ 10-bit register                                       : 15
+ 14-bit register                                       : 1
+ 16-bit register                                       : 1
+ 19-bit register                                       : 12
+ 20-bit register                                       : 1
+ 25-bit register                                       : 12
+ 3-bit register                                        : 2
+ 31-bit register                                       : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 47
+ 10-bit comparator greater                             : 14
+ 19-bit comparator greater                             : 12
+ 25-bit comparator greater                             : 12
+ 3-bit comparator greater                              : 4
+ 4-bit comparator greater                              : 5
+# Multiplexers                                         : 30
+ 1-bit 10-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 3
+ 14-bit 2-to-1 multiplexer                             : 1
+ 19-bit 2-to-1 multiplexer                             : 12
+ 8-bit 2-to-1 multiplexer                              : 13
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <TicToc_Arr_17> in Unit <TicToc_1> is equivalent to the following 2 FFs/Latches, which will be removed : <TicToc_Arr_18> <TicToc_Arr_19> 
+WARNING:Xst:1710 - FF/Latch <txData_0> (without init value) has a constant value of 0 in block <UART_TX_Send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <txData_9> (without init value) has a constant value of 1 in block <UART_TX_Send>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <TicToc_Arr_16> (without init value) has a constant value of 1 in block <TicToc_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <TicToc_Arr_17> (without init value) has a constant value of 0 in block <TicToc_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <TicToc_Arr<19:17>> (without init value) have a constant value of 0 in block <TicToc>.
+
+Synthesizing (advanced) Unit <ASCIIConvert>.
+The following registers are absorbed into counter <Delay_Counter>: 1 register on signal <Delay_Counter>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+Unit <ASCIIConvert> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Frequency_Divided_Clock>.
+The following registers are absorbed into counter <Clk_Prescalar>: 1 register on signal <Clk_Prescalar>.
+Unit <Frequency_Divided_Clock> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Input_Signal_1>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+The following registers are absorbed into counter <Prescalar>: 1 register on signal <Prescalar>.
+The following registers are absorbed into counter <Delay_Counter>: 1 register on signal <Delay_Counter>.
+INFO:Xst:3226 - The RAM <Mram_Counter[9]_X_9_o_Mux_5_o> will be implemented as a BLOCK RAM, absorbing the following register(s): <Input_Out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Input_Out>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Input_Signal_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Input_Signal_2>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+The following registers are absorbed into counter <Prescalar>: 1 register on signal <Prescalar>.
+The following registers are absorbed into counter <Delay_Counter>: 1 register on signal <Delay_Counter>.
+INFO:Xst:3226 - The RAM <Mram_Counter[9]_X_10_o_Mux_5_o> will be implemented as a BLOCK RAM, absorbing the following register(s): <Input_Out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Input_Out>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Input_Signal_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Input_Signal_3>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+The following registers are absorbed into counter <Prescalar>: 1 register on signal <Prescalar>.
+The following registers are absorbed into counter <Delay_Counter>: 1 register on signal <Delay_Counter>.
+INFO:Xst:3226 - The RAM <Mram_Counter[9]_X_11_o_Mux_5_o> will be implemented as a BLOCK RAM, absorbing the following register(s): <Input_Out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Input_Out>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Input_Signal_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Input_Signal_4>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+The following registers are absorbed into counter <Prescalar>: 1 register on signal <Prescalar>.
+The following registers are absorbed into counter <Delay_Counter>: 1 register on signal <Delay_Counter>.
+INFO:Xst:3226 - The RAM <Mram_Counter[9]_X_12_o_Mux_5_o> will be implemented as a BLOCK RAM, absorbing the following register(s): <Input_Out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Input_Out>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Input_Signal_4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Input_Signal_5>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+The following registers are absorbed into counter <Prescalar>: 1 register on signal <Prescalar>.
+The following registers are absorbed into counter <Delay_Counter>: 1 register on signal <Delay_Counter>.
+INFO:Xst:3226 - The RAM <Mram_Counter[9]_X_13_o_Mux_5_o> will be implemented as a BLOCK RAM, absorbing the following register(s): <Input_Out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Input_Out>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Input_Signal_5> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Input_Signal_6>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+The following registers are absorbed into counter <Prescalar>: 1 register on signal <Prescalar>.
+The following registers are absorbed into counter <Delay_Counter>: 1 register on signal <Delay_Counter>.
+INFO:Xst:3226 - The RAM <Mram_Counter[9]_X_14_o_Mux_5_o> will be implemented as a BLOCK RAM, absorbing the following register(s): <Input_Out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Input_Out>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Input_Signal_6> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Input_Signal_7>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+The following registers are absorbed into counter <Prescalar>: 1 register on signal <Prescalar>.
+The following registers are absorbed into counter <Delay_Counter>: 1 register on signal <Delay_Counter>.
+INFO:Xst:3226 - The RAM <Mram_Counter[9]_X_15_o_Mux_5_o> will be implemented as a BLOCK RAM, absorbing the following register(s): <Input_Out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1024-word x 1-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <Counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Input_Out>     |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Input_Signal_7> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Input_Signal_8>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+The following registers are absorbed into counter <Delay_Counter>: 1 register on signal <Delay_Counter>.
+The following registers are absorbed into counter <Prescalar>: 1 register on signal <Prescalar>.
+INFO:Xst:3231 - The small RAM <Mram_Counter[9]_GND_16_o_Mux_5_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(Counter<9:6>,Counter<4>,Counter<0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Input_Signal_8> synthesized (advanced).
+
+Synthesizing (advanced) Unit <TicToc>.
+The following registers are absorbed into counter <Input_Counter>: 1 register on signal <Input_Counter>.
+The following registers are absorbed into counter <Counter>: 1 register on signal <Counter>.
+Unit <TicToc> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UART_TX_CTRL>.
+The following registers are absorbed into counter <bitTmr>: 1 register on signal <bitTmr>.
+The following registers are absorbed into counter <bitIndex>: 1 register on signal <bitIndex>.
+Unit <UART_TX_CTRL> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 12
+ 1024x1-bit single-port block Read Only RAM            : 11
+ 64x1-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 12
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 8-bit adder                                           : 10
+# Counters                                             : 43
+ 10-bit up counter                                     : 14
+ 14-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 19-bit up counter                                     : 12
+ 25-bit up counter                                     : 12
+ 3-bit up counter                                      : 2
+ 31-bit up counter                                     : 1
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+# Comparators                                          : 47
+ 10-bit comparator greater                             : 14
+ 19-bit comparator greater                             : 12
+ 25-bit comparator greater                             : 12
+ 3-bit comparator greater                              : 4
+ 4-bit comparator greater                              : 5
+# Multiplexers                                         : 17
+ 1-bit 10-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 13
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <txData_0> (without init value) has a constant value of 0 in block <UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txData_9> (without init value) has a constant value of 1 in block <UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <TicToc_Arr_16> (without init value) has a constant value of 1 in block <TicToc>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2697 - Unit <MTP_> : the RAMs <PSG_BackR_Up_Input/Mram_Counter[9]_X_11_o_Mux_5_o>, <PSG_BackL_Up_Input/Mram_Counter[9]_X_11_o_Mux_5_o> are packed into the single block RAM <PSG_BackR_Up_Input/Mram_Counter[9]_X_11_o_Mux_5_o1>
+INFO:Xst:2697 - Unit <MTP_> : the RAMs <PSG_BackR_Down_Input/Mram_Counter[9]_X_12_o_Mux_5_o>, <PSG_BackL_Down_Input/Mram_Counter[9]_X_12_o_Mux_5_o> are packed into the single block RAM <PSG_BackR_Down_Input/Mram_Counter[9]_X_12_o_Mux_5_o1>
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UART_TX_Send/FSM_0> on signal <txState[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ rdy      | 00
+ load_bit | 01
+ send_bit | 10
+----------------------
+WARNING:Xst:1293 - FF/Latch <TicToc_ASCII_7> has a constant value of 0 in block <ASCIIConvert>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    _i000017 in unit <TicToc>
+
+
+Optimizing unit <FPGA_Inputs> ...
+
+Optimizing unit <UART_TX_CTRL> ...
+
+Optimizing unit <ASCIIConvert> ...
+
+Optimizing unit <TicToc> ...
+WARNING:Xst:1710 - FF/Latch <UART_TX_Send/txData_8> (without init value) has a constant value of 0 in block <FPGA_Inputs>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_0> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_0> <PSG_BackR_Up_Input/Prescalar_0> <PSG_BackL_Up_Input/Prescalar_0> <PSG_Front_Up_Input/Prescalar_0> <PSG_BackR_Down_Input/Prescalar_0> <PSG_BackL_Down_Input/Prescalar_0> <PSG_Front_Down_Input/Prescalar_0> <endofrange_Input/Prescalar_0> <currentsense_0_Input/Prescalar_0> <currentsense_1_Input/Prescalar_0> <ready_Input/Prescalar_0> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_1> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_1> <PSG_BackR_Up_Input/Prescalar_1> <PSG_BackL_Up_Input/Prescalar_1> <PSG_Front_Up_Input/Prescalar_1> <PSG_BackR_Down_Input/Prescalar_1> <PSG_BackL_Down_Input/Prescalar_1> <PSG_Front_Down_Input/Prescalar_1> <endofrange_Input/Prescalar_1> <currentsense_0_Input/Prescalar_1> <currentsense_1_Input/Prescalar_1> <ready_Input/Prescalar_1> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_2> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_2> <PSG_BackR_Up_Input/Prescalar_2> <PSG_BackL_Up_Input/Prescalar_2> <PSG_Front_Up_Input/Prescalar_2> <PSG_BackR_Down_Input/Prescalar_2> <PSG_BackL_Down_Input/Prescalar_2> <PSG_Front_Down_Input/Prescalar_2> <endofrange_Input/Prescalar_2> <currentsense_0_Input/Prescalar_2> <currentsense_1_Input/Prescalar_2> <ready_Input/Prescalar_2> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_3> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_3> <PSG_BackR_Up_Input/Prescalar_3> <PSG_BackL_Up_Input/Prescalar_3> <PSG_Front_Up_Input/Prescalar_3> <PSG_BackR_Down_Input/Prescalar_3> <PSG_BackL_Down_Input/Prescalar_3> <PSG_Front_Down_Input/Prescalar_3> <endofrange_Input/Prescalar_3> <currentsense_0_Input/Prescalar_3> <currentsense_1_Input/Prescalar_3> <ready_Input/Prescalar_3> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_4> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_4> <PSG_BackR_Up_Input/Prescalar_4> <PSG_BackL_Up_Input/Prescalar_4> <PSG_Front_Up_Input/Prescalar_4> <PSG_BackR_Down_Input/Prescalar_4> <PSG_BackL_Down_Input/Prescalar_4> <PSG_Front_Down_Input/Prescalar_4> <endofrange_Input/Prescalar_4> <currentsense_0_Input/Prescalar_4> <currentsense_1_Input/Prescalar_4> <ready_Input/Prescalar_4> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_5> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_5> <PSG_BackR_Up_Input/Prescalar_5> <PSG_BackL_Up_Input/Prescalar_5> <PSG_Front_Up_Input/Prescalar_5> <PSG_BackR_Down_Input/Prescalar_5> <PSG_BackL_Down_Input/Prescalar_5> <PSG_Front_Down_Input/Prescalar_5> <endofrange_Input/Prescalar_5> <currentsense_0_Input/Prescalar_5> <currentsense_1_Input/Prescalar_5> <ready_Input/Prescalar_5> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_6> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_6> <PSG_BackR_Up_Input/Prescalar_6> <PSG_BackL_Up_Input/Prescalar_6> <PSG_Front_Up_Input/Prescalar_6> <PSG_BackR_Down_Input/Prescalar_6> <PSG_BackL_Down_Input/Prescalar_6> <PSG_Front_Down_Input/Prescalar_6> <endofrange_Input/Prescalar_6> <currentsense_0_Input/Prescalar_6> <currentsense_1_Input/Prescalar_6> <ready_Input/Prescalar_6> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_7> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_7> <PSG_BackR_Up_Input/Prescalar_7> <PSG_BackL_Up_Input/Prescalar_7> <PSG_Front_Up_Input/Prescalar_7> <PSG_BackR_Down_Input/Prescalar_7> <PSG_BackL_Down_Input/Prescalar_7> <PSG_Front_Down_Input/Prescalar_7> <endofrange_Input/Prescalar_7> <currentsense_0_Input/Prescalar_7> <currentsense_1_Input/Prescalar_7> <ready_Input/Prescalar_7> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_8> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_8> <PSG_BackR_Up_Input/Prescalar_8> <PSG_BackL_Up_Input/Prescalar_8> <PSG_Front_Up_Input/Prescalar_8> <PSG_BackR_Down_Input/Prescalar_8> <PSG_BackL_Down_Input/Prescalar_8> <PSG_Front_Down_Input/Prescalar_8> <endofrange_Input/Prescalar_8> <currentsense_0_Input/Prescalar_8> <currentsense_1_Input/Prescalar_8> <ready_Input/Prescalar_8> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_9> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_9> <PSG_BackR_Up_Input/Prescalar_9> <PSG_BackL_Up_Input/Prescalar_9> <PSG_Front_Up_Input/Prescalar_9> <PSG_BackR_Down_Input/Prescalar_9> <PSG_BackL_Down_Input/Prescalar_9> <PSG_Front_Down_Input/Prescalar_9> <endofrange_Input/Prescalar_9> <currentsense_0_Input/Prescalar_9> <currentsense_1_Input/Prescalar_9> <ready_Input/Prescalar_9> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_10> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_10> <PSG_BackR_Up_Input/Delay_Counter_10> <PSG_BackL_Up_Input/Delay_Counter_10> <PSG_Front_Up_Input/Delay_Counter_10> <PSG_BackR_Down_Input/Delay_Counter_10> <PSG_BackL_Down_Input/Delay_Counter_10> <PSG_Front_Down_Input/Delay_Counter_10> <endofrange_Input/Delay_Counter_10> <currentsense_0_Input/Delay_Counter_10> <currentsense_1_Input/Delay_Counter_10> <ready_Input/Delay_Counter_10> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_11> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_11> <PSG_BackR_Up_Input/Delay_Counter_11> <PSG_BackL_Up_Input/Delay_Counter_11> <PSG_Front_Up_Input/Delay_Counter_11> <PSG_BackR_Down_Input/Delay_Counter_11> <PSG_BackL_Down_Input/Delay_Counter_11> <PSG_Front_Down_Input/Delay_Counter_11> <endofrange_Input/Delay_Counter_11> <currentsense_0_Input/Delay_Counter_11> <currentsense_1_Input/Delay_Counter_11> <ready_Input/Delay_Counter_11> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_12> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_12> <PSG_BackR_Up_Input/Delay_Counter_12> <PSG_BackL_Up_Input/Delay_Counter_12> <PSG_Front_Up_Input/Delay_Counter_12> <PSG_BackR_Down_Input/Delay_Counter_12> <PSG_BackL_Down_Input/Delay_Counter_12> <PSG_Front_Down_Input/Delay_Counter_12> <endofrange_Input/Delay_Counter_12> <currentsense_0_Input/Delay_Counter_12> <currentsense_1_Input/Delay_Counter_12> <ready_Input/Delay_Counter_12> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_13> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_13> <PSG_BackR_Up_Input/Delay_Counter_13> <PSG_BackL_Up_Input/Delay_Counter_13> <PSG_Front_Up_Input/Delay_Counter_13> <PSG_BackR_Down_Input/Delay_Counter_13> <PSG_BackL_Down_Input/Delay_Counter_13> <PSG_Front_Down_Input/Delay_Counter_13> <endofrange_Input/Delay_Counter_13> <currentsense_0_Input/Delay_Counter_13> <currentsense_1_Input/Delay_Counter_13> <ready_Input/Delay_Counter_13> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_14> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_14> <PSG_BackR_Up_Input/Delay_Counter_14> <PSG_BackL_Up_Input/Delay_Counter_14> <PSG_Front_Up_Input/Delay_Counter_14> <PSG_BackR_Down_Input/Delay_Counter_14> <PSG_BackL_Down_Input/Delay_Counter_14> <PSG_Front_Down_Input/Delay_Counter_14> <endofrange_Input/Delay_Counter_14> <currentsense_0_Input/Delay_Counter_14> <currentsense_1_Input/Delay_Counter_14> <ready_Input/Delay_Counter_14> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_15> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_15> <PSG_BackR_Up_Input/Delay_Counter_15> <PSG_BackL_Up_Input/Delay_Counter_15> <PSG_Front_Up_Input/Delay_Counter_15> <PSG_BackR_Down_Input/Delay_Counter_15> <PSG_BackL_Down_Input/Delay_Counter_15> <PSG_Front_Down_Input/Delay_Counter_15> <endofrange_Input/Delay_Counter_15> <currentsense_0_Input/Delay_Counter_15> <currentsense_1_Input/Delay_Counter_15> <ready_Input/Delay_Counter_15> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_20> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_20> <PSG_BackR_Up_Input/Delay_Counter_20> <PSG_BackL_Up_Input/Delay_Counter_20> <PSG_Front_Up_Input/Delay_Counter_20> <PSG_BackR_Down_Input/Delay_Counter_20> <PSG_BackL_Down_Input/Delay_Counter_20> <PSG_Front_Down_Input/Delay_Counter_20> <endofrange_Input/Delay_Counter_20> <currentsense_0_Input/Delay_Counter_20> <currentsense_1_Input/Delay_Counter_20> <ready_Input/Delay_Counter_20> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_16> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_16> <PSG_BackR_Up_Input/Delay_Counter_16> <PSG_BackL_Up_Input/Delay_Counter_16> <PSG_Front_Up_Input/Delay_Counter_16> <PSG_BackR_Down_Input/Delay_Counter_16> <PSG_BackL_Down_Input/Delay_Counter_16> <PSG_Front_Down_Input/Delay_Counter_16> <endofrange_Input/Delay_Counter_16> <currentsense_0_Input/Delay_Counter_16> <currentsense_1_Input/Delay_Counter_16> <ready_Input/Delay_Counter_16> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_21> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_21> <PSG_BackR_Up_Input/Delay_Counter_21> <PSG_BackL_Up_Input/Delay_Counter_21> <PSG_Front_Up_Input/Delay_Counter_21> <PSG_BackR_Down_Input/Delay_Counter_21> <PSG_BackL_Down_Input/Delay_Counter_21> <PSG_Front_Down_Input/Delay_Counter_21> <endofrange_Input/Delay_Counter_21> <currentsense_0_Input/Delay_Counter_21> <currentsense_1_Input/Delay_Counter_21> <ready_Input/Delay_Counter_21> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_17> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_17> <PSG_BackR_Up_Input/Delay_Counter_17> <PSG_BackL_Up_Input/Delay_Counter_17> <PSG_Front_Up_Input/Delay_Counter_17> <PSG_BackR_Down_Input/Delay_Counter_17> <PSG_BackL_Down_Input/Delay_Counter_17> <PSG_Front_Down_Input/Delay_Counter_17> <endofrange_Input/Delay_Counter_17> <currentsense_0_Input/Delay_Counter_17> <currentsense_1_Input/Delay_Counter_17> <ready_Input/Delay_Counter_17> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_22> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_22> <PSG_BackR_Up_Input/Delay_Counter_22> <PSG_BackL_Up_Input/Delay_Counter_22> <PSG_Front_Up_Input/Delay_Counter_22> <PSG_BackR_Down_Input/Delay_Counter_22> <PSG_BackL_Down_Input/Delay_Counter_22> <PSG_Front_Down_Input/Delay_Counter_22> <endofrange_Input/Delay_Counter_22> <currentsense_0_Input/Delay_Counter_22> <currentsense_1_Input/Delay_Counter_22> <ready_Input/Delay_Counter_22> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_18> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_18> <PSG_BackR_Up_Input/Delay_Counter_18> <PSG_BackL_Up_Input/Delay_Counter_18> <PSG_Front_Up_Input/Delay_Counter_18> <PSG_BackR_Down_Input/Delay_Counter_18> <PSG_BackL_Down_Input/Delay_Counter_18> <PSG_Front_Down_Input/Delay_Counter_18> <endofrange_Input/Delay_Counter_18> <currentsense_0_Input/Delay_Counter_18> <currentsense_1_Input/Delay_Counter_18> <ready_Input/Delay_Counter_18> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_23> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_23> <PSG_BackR_Up_Input/Delay_Counter_23> <PSG_BackL_Up_Input/Delay_Counter_23> <PSG_Front_Up_Input/Delay_Counter_23> <PSG_BackR_Down_Input/Delay_Counter_23> <PSG_BackL_Down_Input/Delay_Counter_23> <PSG_Front_Down_Input/Delay_Counter_23> <endofrange_Input/Delay_Counter_23> <currentsense_0_Input/Delay_Counter_23> <currentsense_1_Input/Delay_Counter_23> <ready_Input/Delay_Counter_23> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_19> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_19> <PSG_BackR_Up_Input/Delay_Counter_19> <PSG_BackL_Up_Input/Delay_Counter_19> <PSG_Front_Up_Input/Delay_Counter_19> <PSG_BackR_Down_Input/Delay_Counter_19> <PSG_BackL_Down_Input/Delay_Counter_19> <PSG_Front_Down_Input/Delay_Counter_19> <endofrange_Input/Delay_Counter_19> <currentsense_0_Input/Delay_Counter_19> <currentsense_1_Input/Delay_Counter_19> <ready_Input/Delay_Counter_19> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_24> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_24> <PSG_BackR_Up_Input/Delay_Counter_24> <PSG_BackL_Up_Input/Delay_Counter_24> <PSG_Front_Up_Input/Delay_Counter_24> <PSG_BackR_Down_Input/Delay_Counter_24> <PSG_BackL_Down_Input/Delay_Counter_24> <PSG_Front_Down_Input/Delay_Counter_24> <endofrange_Input/Delay_Counter_24> <currentsense_0_Input/Delay_Counter_24> <currentsense_1_Input/Delay_Counter_24> <ready_Input/Delay_Counter_24> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_10> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_10> <PSG_BackR_Up_Input/Prescalar_10> <PSG_BackL_Up_Input/Prescalar_10> <PSG_Front_Up_Input/Prescalar_10> <PSG_BackR_Down_Input/Prescalar_10> <PSG_BackL_Down_Input/Prescalar_10> <PSG_Front_Down_Input/Prescalar_10> <endofrange_Input/Prescalar_10> <currentsense_0_Input/Prescalar_10> <currentsense_1_Input/Prescalar_10> <ready_Input/Prescalar_10> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_11> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_11> <PSG_BackR_Up_Input/Prescalar_11> <PSG_BackL_Up_Input/Prescalar_11> <PSG_Front_Up_Input/Prescalar_11> <PSG_BackR_Down_Input/Prescalar_11> <PSG_BackL_Down_Input/Prescalar_11> <PSG_Front_Down_Input/Prescalar_11> <endofrange_Input/Prescalar_11> <currentsense_0_Input/Prescalar_11> <currentsense_1_Input/Prescalar_11> <ready_Input/Prescalar_11> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_12> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_12> <PSG_BackR_Up_Input/Prescalar_12> <PSG_BackL_Up_Input/Prescalar_12> <PSG_Front_Up_Input/Prescalar_12> <PSG_BackR_Down_Input/Prescalar_12> <PSG_BackL_Down_Input/Prescalar_12> <PSG_Front_Down_Input/Prescalar_12> <endofrange_Input/Prescalar_12> <currentsense_0_Input/Prescalar_12> <currentsense_1_Input/Prescalar_12> <ready_Input/Prescalar_12> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_13> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_13> <PSG_BackR_Up_Input/Prescalar_13> <PSG_BackL_Up_Input/Prescalar_13> <PSG_Front_Up_Input/Prescalar_13> <PSG_BackR_Down_Input/Prescalar_13> <PSG_BackL_Down_Input/Prescalar_13> <PSG_Front_Down_Input/Prescalar_13> <endofrange_Input/Prescalar_13> <currentsense_0_Input/Prescalar_13> <currentsense_1_Input/Prescalar_13> <ready_Input/Prescalar_13> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_14> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_14> <PSG_BackR_Up_Input/Prescalar_14> <PSG_BackL_Up_Input/Prescalar_14> <PSG_Front_Up_Input/Prescalar_14> <PSG_BackR_Down_Input/Prescalar_14> <PSG_BackL_Down_Input/Prescalar_14> <PSG_Front_Down_Input/Prescalar_14> <endofrange_Input/Prescalar_14> <currentsense_0_Input/Prescalar_14> <currentsense_1_Input/Prescalar_14> <ready_Input/Prescalar_14> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_15> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_15> <PSG_BackR_Up_Input/Prescalar_15> <PSG_BackL_Up_Input/Prescalar_15> <PSG_Front_Up_Input/Prescalar_15> <PSG_BackR_Down_Input/Prescalar_15> <PSG_BackL_Down_Input/Prescalar_15> <PSG_Front_Down_Input/Prescalar_15> <endofrange_Input/Prescalar_15> <currentsense_0_Input/Prescalar_15> <currentsense_1_Input/Prescalar_15> <ready_Input/Prescalar_15> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_16> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_16> <PSG_BackR_Up_Input/Prescalar_16> <PSG_BackL_Up_Input/Prescalar_16> <PSG_Front_Up_Input/Prescalar_16> <PSG_BackR_Down_Input/Prescalar_16> <PSG_BackL_Down_Input/Prescalar_16> <PSG_Front_Down_Input/Prescalar_16> <endofrange_Input/Prescalar_16> <currentsense_0_Input/Prescalar_16> <currentsense_1_Input/Prescalar_16> <ready_Input/Prescalar_16> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_17> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_17> <PSG_BackR_Up_Input/Prescalar_17> <PSG_BackL_Up_Input/Prescalar_17> <PSG_Front_Up_Input/Prescalar_17> <PSG_BackR_Down_Input/Prescalar_17> <PSG_BackL_Down_Input/Prescalar_17> <PSG_Front_Down_Input/Prescalar_17> <endofrange_Input/Prescalar_17> <currentsense_0_Input/Prescalar_17> <currentsense_1_Input/Prescalar_17> <ready_Input/Prescalar_17> 
+INFO:Xst:2261 - The FF/Latch <DRV_Down_Input/Prescalar_18> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Up_Input/Prescalar_18> <PSG_BackR_Up_Input/Prescalar_18> <PSG_BackL_Up_Input/Prescalar_18> <PSG_Front_Up_Input/Prescalar_18> <PSG_BackR_Down_Input/Prescalar_18> <PSG_BackL_Down_Input/Prescalar_18> <PSG_Front_Down_Input/Prescalar_18> <endofrange_Input/Prescalar_18> <currentsense_0_Input/Prescalar_18> <currentsense_1_Input/Prescalar_18> <ready_Input/Prescalar_18> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Counter_0> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Counter_0> <PSG_BackR_Up_Input/Counter_0> <PSG_BackL_Up_Input/Counter_0> <PSG_Front_Up_Input/Counter_0> <PSG_BackR_Down_Input/Counter_0> <PSG_BackL_Down_Input/Counter_0> <PSG_Front_Down_Input/Counter_0> <endofrange_Input/Counter_0> <currentsense_0_Input/Counter_0> <currentsense_1_Input/Counter_0> <ready_Input/Counter_0> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Counter_1> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Counter_1> <PSG_BackR_Up_Input/Counter_1> <PSG_BackL_Up_Input/Counter_1> <PSG_Front_Up_Input/Counter_1> <PSG_BackR_Down_Input/Counter_1> <PSG_BackL_Down_Input/Counter_1> <PSG_Front_Down_Input/Counter_1> <endofrange_Input/Counter_1> <currentsense_0_Input/Counter_1> <currentsense_1_Input/Counter_1> <ready_Input/Counter_1> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Counter_2> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Counter_2> <PSG_BackR_Up_Input/Counter_2> <PSG_BackL_Up_Input/Counter_2> <PSG_Front_Up_Input/Counter_2> <PSG_BackR_Down_Input/Counter_2> <PSG_BackL_Down_Input/Counter_2> <PSG_Front_Down_Input/Counter_2> <endofrange_Input/Counter_2> <currentsense_0_Input/Counter_2> <currentsense_1_Input/Counter_2> <ready_Input/Counter_2> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Counter_3> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Counter_3> <PSG_BackR_Up_Input/Counter_3> <PSG_BackL_Up_Input/Counter_3> <PSG_Front_Up_Input/Counter_3> <PSG_BackR_Down_Input/Counter_3> <PSG_BackL_Down_Input/Counter_3> <PSG_Front_Down_Input/Counter_3> <endofrange_Input/Counter_3> <currentsense_0_Input/Counter_3> <currentsense_1_Input/Counter_3> <ready_Input/Counter_3> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Counter_4> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Counter_4> <PSG_BackR_Up_Input/Counter_4> <PSG_BackL_Up_Input/Counter_4> <PSG_Front_Up_Input/Counter_4> <PSG_BackR_Down_Input/Counter_4> <PSG_BackL_Down_Input/Counter_4> <PSG_Front_Down_Input/Counter_4> <endofrange_Input/Counter_4> <currentsense_0_Input/Counter_4> <currentsense_1_Input/Counter_4> <ready_Input/Counter_4> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Counter_5> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Counter_5> <PSG_BackR_Up_Input/Counter_5> <PSG_BackL_Up_Input/Counter_5> <PSG_Front_Up_Input/Counter_5> <PSG_BackR_Down_Input/Counter_5> <PSG_BackL_Down_Input/Counter_5> <PSG_Front_Down_Input/Counter_5> <endofrange_Input/Counter_5> <currentsense_0_Input/Counter_5> <currentsense_1_Input/Counter_5> <ready_Input/Counter_5> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Counter_6> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Counter_6> <PSG_BackR_Up_Input/Counter_6> <PSG_BackL_Up_Input/Counter_6> <PSG_Front_Up_Input/Counter_6> <PSG_BackR_Down_Input/Counter_6> <PSG_BackL_Down_Input/Counter_6> <PSG_Front_Down_Input/Counter_6> <endofrange_Input/Counter_6> <currentsense_0_Input/Counter_6> <currentsense_1_Input/Counter_6> <ready_Input/Counter_6> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Counter_7> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Counter_7> <PSG_BackR_Up_Input/Counter_7> <PSG_BackL_Up_Input/Counter_7> <PSG_Front_Up_Input/Counter_7> <PSG_BackR_Down_Input/Counter_7> <PSG_BackL_Down_Input/Counter_7> <PSG_Front_Down_Input/Counter_7> <endofrange_Input/Counter_7> <currentsense_0_Input/Counter_7> <currentsense_1_Input/Counter_7> <ready_Input/Counter_7> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Counter_8> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Counter_8> <PSG_BackR_Up_Input/Counter_8> <PSG_BackL_Up_Input/Counter_8> <PSG_Front_Up_Input/Counter_8> <PSG_BackR_Down_Input/Counter_8> <PSG_BackL_Down_Input/Counter_8> <PSG_Front_Down_Input/Counter_8> <endofrange_Input/Counter_8> <currentsense_0_Input/Counter_8> <currentsense_1_Input/Counter_8> <ready_Input/Counter_8> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Counter_9> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Counter_9> <PSG_BackR_Up_Input/Counter_9> <PSG_BackL_Up_Input/Counter_9> <PSG_Front_Up_Input/Counter_9> <PSG_BackR_Down_Input/Counter_9> <PSG_BackL_Down_Input/Counter_9> <PSG_Front_Down_Input/Counter_9> <endofrange_Input/Counter_9> <currentsense_0_Input/Counter_9> <currentsense_1_Input/Counter_9> <ready_Input/Counter_9> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_0> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_0> <PSG_BackR_Up_Input/Delay_Counter_0> <PSG_BackL_Up_Input/Delay_Counter_0> <PSG_Front_Up_Input/Delay_Counter_0> <PSG_BackR_Down_Input/Delay_Counter_0> <PSG_BackL_Down_Input/Delay_Counter_0> <PSG_Front_Down_Input/Delay_Counter_0> <endofrange_Input/Delay_Counter_0> <currentsense_0_Input/Delay_Counter_0> <currentsense_1_Input/Delay_Counter_0> <ready_Input/Delay_Counter_0> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_1> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_1> <PSG_BackR_Up_Input/Delay_Counter_1> <PSG_BackL_Up_Input/Delay_Counter_1> <PSG_Front_Up_Input/Delay_Counter_1> <PSG_BackR_Down_Input/Delay_Counter_1> <PSG_BackL_Down_Input/Delay_Counter_1> <PSG_Front_Down_Input/Delay_Counter_1> <endofrange_Input/Delay_Counter_1> <currentsense_0_Input/Delay_Counter_1> <currentsense_1_Input/Delay_Counter_1> <ready_Input/Delay_Counter_1> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_2> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_2> <PSG_BackR_Up_Input/Delay_Counter_2> <PSG_BackL_Up_Input/Delay_Counter_2> <PSG_Front_Up_Input/Delay_Counter_2> <PSG_BackR_Down_Input/Delay_Counter_2> <PSG_BackL_Down_Input/Delay_Counter_2> <PSG_Front_Down_Input/Delay_Counter_2> <endofrange_Input/Delay_Counter_2> <currentsense_0_Input/Delay_Counter_2> <currentsense_1_Input/Delay_Counter_2> <ready_Input/Delay_Counter_2> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_3> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_3> <PSG_BackR_Up_Input/Delay_Counter_3> <PSG_BackL_Up_Input/Delay_Counter_3> <PSG_Front_Up_Input/Delay_Counter_3> <PSG_BackR_Down_Input/Delay_Counter_3> <PSG_BackL_Down_Input/Delay_Counter_3> <PSG_Front_Down_Input/Delay_Counter_3> <endofrange_Input/Delay_Counter_3> <currentsense_0_Input/Delay_Counter_3> <currentsense_1_Input/Delay_Counter_3> <ready_Input/Delay_Counter_3> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_4> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_4> <PSG_BackR_Up_Input/Delay_Counter_4> <PSG_BackL_Up_Input/Delay_Counter_4> <PSG_Front_Up_Input/Delay_Counter_4> <PSG_BackR_Down_Input/Delay_Counter_4> <PSG_BackL_Down_Input/Delay_Counter_4> <PSG_Front_Down_Input/Delay_Counter_4> <endofrange_Input/Delay_Counter_4> <currentsense_0_Input/Delay_Counter_4> <currentsense_1_Input/Delay_Counter_4> <ready_Input/Delay_Counter_4> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_5> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_5> <PSG_BackR_Up_Input/Delay_Counter_5> <PSG_BackL_Up_Input/Delay_Counter_5> <PSG_Front_Up_Input/Delay_Counter_5> <PSG_BackR_Down_Input/Delay_Counter_5> <PSG_BackL_Down_Input/Delay_Counter_5> <PSG_Front_Down_Input/Delay_Counter_5> <endofrange_Input/Delay_Counter_5> <currentsense_0_Input/Delay_Counter_5> <currentsense_1_Input/Delay_Counter_5> <ready_Input/Delay_Counter_5> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_6> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_6> <PSG_BackR_Up_Input/Delay_Counter_6> <PSG_BackL_Up_Input/Delay_Counter_6> <PSG_Front_Up_Input/Delay_Counter_6> <PSG_BackR_Down_Input/Delay_Counter_6> <PSG_BackL_Down_Input/Delay_Counter_6> <PSG_Front_Down_Input/Delay_Counter_6> <endofrange_Input/Delay_Counter_6> <currentsense_0_Input/Delay_Counter_6> <currentsense_1_Input/Delay_Counter_6> <ready_Input/Delay_Counter_6> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_7> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_7> <PSG_BackR_Up_Input/Delay_Counter_7> <PSG_BackL_Up_Input/Delay_Counter_7> <PSG_Front_Up_Input/Delay_Counter_7> <PSG_BackR_Down_Input/Delay_Counter_7> <PSG_BackL_Down_Input/Delay_Counter_7> <PSG_Front_Down_Input/Delay_Counter_7> <endofrange_Input/Delay_Counter_7> <currentsense_0_Input/Delay_Counter_7> <currentsense_1_Input/Delay_Counter_7> <ready_Input/Delay_Counter_7> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_8> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_8> <PSG_BackR_Up_Input/Delay_Counter_8> <PSG_BackL_Up_Input/Delay_Counter_8> <PSG_Front_Up_Input/Delay_Counter_8> <PSG_BackR_Down_Input/Delay_Counter_8> <PSG_BackL_Down_Input/Delay_Counter_8> <PSG_Front_Down_Input/Delay_Counter_8> <endofrange_Input/Delay_Counter_8> <currentsense_0_Input/Delay_Counter_8> <currentsense_1_Input/Delay_Counter_8> <ready_Input/Delay_Counter_8> 
+INFO:Xst:2261 - The FF/Latch <DRV_Up_Input/Delay_Counter_9> in Unit <FPGA_Inputs> is equivalent to the following 11 FFs/Latches, which will be removed : <DRV_Down_Input/Delay_Counter_9> <PSG_BackR_Up_Input/Delay_Counter_9> <PSG_BackL_Up_Input/Delay_Counter_9> <PSG_Front_Up_Input/Delay_Counter_9> <PSG_BackR_Down_Input/Delay_Counter_9> <PSG_BackL_Down_Input/Delay_Counter_9> <PSG_Front_Down_Input/Delay_Counter_9> <endofrange_Input/Delay_Counter_9> <currentsense_0_Input/Delay_Counter_9> <currentsense_1_Input/Delay_Counter_9> <ready_Input/Delay_Counter_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block FPGA_Inputs, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 181
+ Flip-Flops                                            : 181
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : FPGA_Inputs.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 528
+#      GND                         : 1
+#      INV                         : 21
+#      LUT1                        : 109
+#      LUT2                        : 9
+#      LUT3                        : 26
+#      LUT4                        : 28
+#      LUT5                        : 26
+#      LUT6                        : 42
+#      MUXCY                       : 127
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 135
+# FlipFlops/Latches                : 182
+#      FD                          : 8
+#      FDE                         : 40
+#      FDP                         : 1
+#      FDR                         : 27
+#      FDRE                        : 104
+#      FDSE                        : 1
+#      LDC                         : 1
+# RAMS                             : 9
+#      RAMB8BWER                   : 9
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 2
+#      OBUF                        : 14
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             182  out of  18224     0%  
+ Number of Slice LUTs:                  261  out of   9112     2%  
+    Number used as Logic:               261  out of   9112     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    285
+   Number with an unused Flip Flop:     103  out of    285    36%  
+   Number with an unused LUT:            24  out of    285     8%  
+   Number of fully used LUT-FF pairs:   158  out of    285    55%  
+   Number of unique control sets:        17
+
+IO Utilization: 
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    232     7%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                5  out of     32    15%  
+    Number using Block RAM only:          5
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------------------------+-------------------------------+-------+
+Clock Signal                                                                              | Clock buffer(FF name)         | Load  |
+------------------------------------------------------------------------------------------+-------------------------------+-------+
+Clk                                                                                       | BUFGP                         | 59    |
+Clock/Clk_temp                                                                            | BUFG                          | 130   |
+TicToc_1/TimeStamp_temp_GND_19_o_AND_27_o2(TicToc_1/TimeStamp_temp_GND_19_o_AND_27_o211:O)| NONE(*)(TicToc_1/_i000017_LDC)| 1     |
+ASCIIConvert_1/TicToc_ASCII_TX_done                                                       | NONE(TicToc_1/_i000017_P)     | 1     |
+------------------------------------------------------------------------------------------+-------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.727ns (Maximum Frequency: 174.602MHz)
+   Minimum input arrival time before clock: 5.920ns
+   Maximum output required time after clock: 5.000ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 4.120ns (frequency: 242.742MHz)
+  Total number of paths / destination ports: 1018 / 133
+-------------------------------------------------------------------------
+Delay:               4.120ns (Levels of Logic = 2)
+  Source:            UART_TX_Send/bitTmr_0 (FF)
+  Destination:       UART_TX_Send/bitTmr_13 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: UART_TX_Send/bitTmr_0 to UART_TX_Send/bitTmr_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.981  UART_TX_Send/bitTmr_0 (UART_TX_Send/bitTmr_0)
+     LUT6:I0->O            3   0.203   0.898  UART_TX_Send/bitDone<13>1 (UART_TX_Send/bitDone<13>)
+     LUT6:I2->O           14   0.203   0.957  UART_TX_Send/bitDone_01 (UART_TX_Send/bitDone_0)
+     FDR:R                     0.430          UART_TX_Send/bitTmr_0
+    ----------------------------------------
+    Total                      4.120ns (1.283ns logic, 2.837ns route)
+                                       (31.1% logic, 68.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock/Clk_temp'
+  Clock period: 5.727ns (frequency: 174.602MHz)
+  Total number of paths / destination ports: 7229 / 376
+-------------------------------------------------------------------------
+Delay:               5.727ns (Levels of Logic = 4)
+  Source:            DRV_Down_Input/Prescalar_10 (FF)
+  Destination:       PSG_BackR_Up_Input/Mram_Counter[9]_X_11_o_Mux_5_o1 (RAM)
+  Source Clock:      Clock/Clk_temp rising
+  Destination Clock: Clock/Clk_temp rising
+
+  Data Path: DRV_Down_Input/Prescalar_10 to PSG_BackR_Up_Input/Mram_Counter[9]_X_11_o_Mux_5_o1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.447   1.015  DRV_Down_Input/Prescalar_10 (DRV_Down_Input/Prescalar_10)
+     LUT6:I0->O           21   0.203   1.114  DRV_Up_Input/Prescalar[18]_PWR_9_o_LessThan_4_o_inv_inv11 (DRV_Down_Input/Prescalar[18]_PWR_10_o_LessThan_4_o_inv_inv1)
+     LUT4:I3->O            3   0.205   0.651  DRV_Up_Input/Prescalar[18]_PWR_9_o_LessThan_4_o_inv_inv13 (DRV_Down_Input/Prescalar[18]_PWR_10_o_LessThan_4_o_inv_inv)
+     LUT6:I5->O           11   0.205   0.882  DRV_Down_Input/_n00681 (DRV_Down_Input/_n0068)
+     INV:I->O              1   0.206   0.579  currentsense_1_Input/_n0068_inv_INV_0 (currentsense_1_Input/_n0068_inv)
+     RAMB8BWER:ENAWREN         0.220          currentsense_1_Input/Mram_Counter[9]_X_15_o_Mux_5_o
+    ----------------------------------------
+    Total                      5.727ns (1.486ns logic, 4.241ns route)
+                                       (25.9% logic, 74.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.174ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       Clock/Clk_Prescalar_1 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Reset to Clock/Clk_Prescalar_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            68   1.222   1.667  Reset_IBUF (Reset_IBUF)
+     LUT4:I3->O            3   0.205   0.650  Clock/Mcount_Clk_Prescalar_val1 (Clock/Mcount_Clk_Prescalar_val)
+     FDR:R                     0.430          Clock/Clk_Prescalar_0
+    ----------------------------------------
+    Total                      4.174ns (1.857ns logic, 2.317ns route)
+                                       (44.5% logic, 55.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock/Clk_temp'
+  Total number of paths / destination ports: 191 / 147
+-------------------------------------------------------------------------
+Offset:              5.920ns (Levels of Logic = 4)
+  Source:            Reset (PAD)
+  Destination:       ASCIIConvert_1/TicToc_ASCII_TX_done (FF)
+  Destination Clock: Clock/Clk_temp rising
+
+  Data Path: Reset to ASCIIConvert_1/TicToc_ASCII_TX_done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            68   1.222   1.895  Reset_IBUF (Reset_IBUF)
+     LUT5:I2->O            1   0.205   0.944  ASCIIConvert_1/Delay_Counter[9]_PWR_18_o_LessThan_1_o1_SW1 (N65)
+     LUT6:I0->O            8   0.203   1.147  ASCIIConvert_1/_n0304_inv1 (ASCIIConvert_1/_n0304_inv)
+     LUT6:I1->O            1   0.203   0.000  ASCIIConvert_1/TicToc_ASCII_TX_done_rstpot1 (ASCIIConvert_1/TicToc_ASCII_TX_done_rstpot1)
+     FD:D                      0.102          ASCIIConvert_1/TicToc_ASCII_TX_done
+    ----------------------------------------
+    Total                      5.920ns (1.935ns logic, 3.985ns route)
+                                       (32.7% logic, 67.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'TicToc_1/TimeStamp_temp_GND_19_o_AND_27_o2'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.348ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       TicToc_1/_i000017_LDC (LATCH)
+  Destination Clock: TicToc_1/TimeStamp_temp_GND_19_o_AND_27_o2 falling
+
+  Data Path: Reset to TicToc_1/_i000017_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            68   1.222   1.914  Reset_IBUF (Reset_IBUF)
+     LUT4:I0->O            1   0.203   0.579  TicToc_1/TimeStamp_temp_GND_19_o_AND_28_o3 (TicToc_1/TimeStamp_temp_GND_19_o_AND_28_o)
+     LDC:CLR                   0.430          TicToc_1/_i000017_LDC
+    ----------------------------------------
+    Total                      4.348ns (1.855ns logic, 2.493ns route)
+                                       (42.7% logic, 57.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ASCIIConvert_1/TicToc_ASCII_TX_done'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.801ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       TicToc_1/_i000017_P (FF)
+  Destination Clock: ASCIIConvert_1/TicToc_ASCII_TX_done rising
+
+  Data Path: Reset to TicToc_1/_i000017_P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            68   1.222   1.895  Reset_IBUF (Reset_IBUF)
+     LUT4:I1->O           18   0.205   1.049  TicToc_1/TimeStamp_temp_GND_19_o_AND_27_o211 (TicToc_1/TimeStamp_temp_GND_19_o_AND_27_o2)
+     FDP:PRE                   0.430          TicToc_1/_i000017_P
+    ----------------------------------------
+    Total                      4.801ns (1.857ns logic, 2.944ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            Clock/Clk_temp (FF)
+  Destination:       Clk_out (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: Clock/Clk_temp to Clk_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  Clock/Clk_temp (Clock/Clk_temp)
+     OBUF:I->O                 2.571          Clk_out_OBUF (Clk_out)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock/Clk_temp'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              5.000ns (Levels of Logic = 1)
+  Source:            PSG_BackR_Up_Input/Mram_Counter[9]_X_11_o_Mux_5_o1 (RAM)
+  Destination:       PSG_BackL_Up_Out (PAD)
+  Source Clock:      Clock/Clk_temp rising
+
+  Data Path: PSG_BackR_Up_Input/Mram_Counter[9]_X_11_o_Mux_5_o1 to PSG_BackL_Up_Out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB8BWER:CLKBRDCLK->DOBDO0    1   1.850   0.579  PSG_BackR_Up_Input/Mram_Counter[9]_X_11_o_Mux_5_o1 (PSG_BackL_Up_Out_OBUF)
+     OBUF:I->O                 2.571          PSG_BackL_Up_Out_OBUF (PSG_BackL_Up_Out)
+    ----------------------------------------
+    Total                      5.000ns (4.421ns logic, 0.579ns route)
+                                       (88.4% logic, 11.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ASCIIConvert_1/TicToc_ASCII_TX_done
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock/Clk_temp |    4.732|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    4.120|         |         |         |
+Clock/Clk_temp |    1.812|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Clock/Clk_temp
+------------------------------------------+---------+---------+---------+---------+
+                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------+---------+---------+---------+---------+
+ASCIIConvert_1/TicToc_ASCII_TX_done       |    1.334|         |         |         |
+Clk                                       |    5.101|         |         |         |
+Clock/Clk_temp                            |    5.727|         |         |         |
+TicToc_1/TimeStamp_temp_GND_19_o_AND_27_o2|         |    1.613|         |         |
+------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock TicToc_1/TimeStamp_temp_GND_19_o_AND_27_o2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock/Clk_temp |         |         |    4.472|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.50 secs
+ 
+--> 
+
+Total memory usage is 267064 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :   66 (   0 filtered)
+

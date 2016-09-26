@@ -1,0 +1,26 @@
+NET "Clk" 						LOC = "V10";
+
+NET "Clk_out" 					LOC = "G3"; # -- G3
+NET "Reset"						LOC = "C9";
+
+NET "DRV_Up_Out" 				LOC = "T12";
+NET "DRV_Down_Out"			LOC = "M10";
+
+NET "PSG_Front_Up_Out"		LOC = "V12";
+NET "PSG_Front_Down_Out"	LOC = "N9";
+
+NET "PSG_BackL_Up_Out"		LOC = "N10";
+NET "PSG_BackL_Down_Out"	LOC = "U11";
+
+NET "PSG_BackR_Up_Out"		LOC = "P11"; 
+NET "PSG_BackR_Down_Out"	LOC = "V11"; 
+
+NET "currentsense_0_Out"	LOC = "K2"; 
+NET "currentsense_1_Out"	LOC = "J3"; 
+
+NET "endofrange_Out"			LOC = "K1"; 
+NET "ready_Out"				LOC = "J1"; 
+
+NET "UART_TX" 					LOC ="N18";
+
+NET "TimeStamp" 				LOC ="G11";
