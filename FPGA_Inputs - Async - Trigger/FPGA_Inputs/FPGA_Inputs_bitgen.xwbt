@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\HLi\FPGA_Inputs\FPGA_Inputs - Async - Trigger\FPGA_Inputs\FPGA_Inputs.ncd
+OUTFILE=C:\Users\HLi\FPGA_Inputs\FPGA_Inputs - Async - Trigger\FPGA_Inputs\FPGA_Inputs.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\HLi\FPGA_Inputs\FPGA_Inputs - Async - Trigger\FPGA_Inputs
+LICENSE=WebPack
+USER_INFO=211227150_0_0_435

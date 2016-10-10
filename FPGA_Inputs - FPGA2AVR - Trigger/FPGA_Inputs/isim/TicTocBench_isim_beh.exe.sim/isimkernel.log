@@ -1,0 +1,29 @@
+Command line:
+   TicTocBench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49446
+
+Tue Sep 20 13:14:17 2016
+
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 667.681 Meg
+
+ Total Signals          : 24
+ Total Nets             : 84
+ Total Signal Drivers   : 17
+ Total Blocks           : 7
+ Total Primitive Blocks : 6
+ Total Processes        : 18
+ Total Traceable Variables  : 49
+ Total Scalar Nets and Variables : 12287
+Total Line Count : 40
+
+ Total Simulation Time: 11.4817 sec
+
+ Current Memory Usage: 667.681 Meg
+
+Tue Sep 20 14:11:37 2016
+

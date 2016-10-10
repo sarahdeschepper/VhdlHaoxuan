@@ -1,0 +1,2 @@
+xst -intstyle ise -filter "C:/Users/HLi/FPGA_Inputs/iseconfig/filter.filter" -ifn "C:/Users/HLi/FPGA_Inputs/Input_Signal.xst" -ofn "C:/Users/HLi/FPGA_Inputs/Input_Signal.syr" 
+vhdtdtfi -prj FPGA_Inputs -o C:/Users/HLi/FPGA_Inputs/Input_Signal.vhi -module Input_Signal -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work FPGA_Inputs_Pkg.vhd -lib work Input_Signal.vhd 

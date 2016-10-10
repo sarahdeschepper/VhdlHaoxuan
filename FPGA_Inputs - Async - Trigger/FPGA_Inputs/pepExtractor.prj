@@ -1,0 +1,2 @@
+work	"../FPGA_Inputs_Pkg.vhd"
+work	"../TicToc.vhd"

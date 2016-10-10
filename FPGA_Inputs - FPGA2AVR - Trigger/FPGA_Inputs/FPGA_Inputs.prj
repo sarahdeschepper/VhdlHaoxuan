@@ -1,0 +1,8 @@
+vhdl work "FPGA_Inputs_Pkg.vhd"
+vhdl work "UART_TX_CTRL.vhd"
+vhdl work "TicToc.vhd"
+vhdl work "Task_Trigger.vhd"
+vhdl work "Input_Signal.vhd"
+vhdl work "Frequency_Divided_Clock.vhd"
+vhdl work "ASCIIConvert.vhd"
+vhdl work "main.vhd"

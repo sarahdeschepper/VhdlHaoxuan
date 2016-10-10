@@ -1,0 +1,26 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Oct 10 11:34:49 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "UART_TX" LOCATE = SITE "N18" LEVEL 1;
+COMP "PSG_Front_Down_Out" LOCATE = SITE "N9" LEVEL 1;
+COMP "PSG_Front_Up_Out" LOCATE = SITE "V12" LEVEL 1;
+COMP "Clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "Clk_out" LOCATE = SITE "G3" LEVEL 1;
+COMP "endofrange_Out" LOCATE = SITE "K1" LEVEL 1;
+COMP "PSG_BackL_Up_Out" LOCATE = SITE "N10" LEVEL 1;
+COMP "PSG_BackR_Down_Out" LOCATE = SITE "V11" LEVEL 1;
+COMP "Reset" LOCATE = SITE "A8" LEVEL 1;
+COMP "PSG_BackR_Up_Out" LOCATE = SITE "P11" LEVEL 1;
+COMP "DRV_Down_Out" LOCATE = SITE "M10" LEVEL 1;
+COMP "Next_Round" LOCATE = SITE "B8" LEVEL 1;
+COMP "ready_Out" LOCATE = SITE "J1" LEVEL 1;
+COMP "Enable" LOCATE = SITE "C9" LEVEL 1;
+COMP "currentsense_0_Out" LOCATE = SITE "K2" LEVEL 1;
+COMP "currentsense_1_Out" LOCATE = SITE "J3" LEVEL 1;
+COMP "TimeStamp" LOCATE = SITE "G11" LEVEL 1;
+COMP "DRV_Up_Out" LOCATE = SITE "T12" LEVEL 1;
+COMP "PSG_BackL_Down_Out" LOCATE = SITE "U11" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,29 @@
+Command line:
+   BenchASCII_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63362
+
+Mon Sep 19 15:06:23 2016
+
+
+ Elaboration Time: 0.015601 sec
+
+ Current Memory Usage: 667.681 Meg
+
+ Total Signals          : 25
+ Total Nets             : 54
+ Total Signal Drivers   : 17
+ Total Blocks           : 7
+ Total Primitive Blocks : 6
+ Total Processes        : 17
+ Total Traceable Variables  : 52
+ Total Scalar Nets and Variables : 12275
+Total Line Count : 50
+
+ Total Simulation Time: 3.12002 sec
+
+ Current Memory Usage: 667.681 Meg
+
+Mon Sep 19 15:06:43 2016
+

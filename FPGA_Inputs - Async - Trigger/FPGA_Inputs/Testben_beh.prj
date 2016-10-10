@@ -1,0 +1,4 @@
+vhdl work "FPGA_Inputs_Pkg.vhd"
+vhdl work "Input_Signal.vhd"
+verilog work "Testben.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
